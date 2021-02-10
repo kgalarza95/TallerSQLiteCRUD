@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Taller SQLite</string>
+    <string name="txt_usuario">Ingrese Usuario</string>
+    <string name="txt_contrasenia">Ingrese Contraseña</string>
+    <string name="btn_olvide">¿Olvidó su contraseña?</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_nuevo_usuario">Nuevo Usuario</string>
+
+    <string name="txt_nombre">Ingrese Nombre</string>
+    <string name="txt_edad">Ingrese Edad</string>
+    <string name="txt_telefono">Ingrese Teléfono</string>
+    <string name="txt_correo">Ingrese Correo</string>
+    <string name="txt_fecha_nacimiento">Fecha Nacimiento</string>
+    <string name="rbtn_masculino">Masculino</string>
+    <string name="rbtn_femenino">Femenino</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string-array name="spiner_ciudades">
+        <item>..: Ciudad :..</item>
+        <item>Guayaquil</item>
+        <item>Quito</item>
+        <item>Manta</item>
+        <item>Machala</item>
+        <item>Loja</item>
+        <item>Esmeraldas</item>
+        <item>Cuenca</item>
+    </string-array>
+
+
+    <string name="txt_nombre2">Nombre</string>
+    <string name="txt_edad2">Edad</string>
+    <string name="txt_telefono2">Teléfono</string>
+    <string name="txt_correo2">Correo</string>
+    <string name="txt_fecha_nacimiento2">Fecha Nacimiento</string>
+    <string name="rbtn_masculino2">Masculino</string>
+    <string name="rbtn_femenino2">Femenino</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

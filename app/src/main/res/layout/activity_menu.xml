@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="OPERACIONES CRUD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre2"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txt_nombre2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCedula2" />
+
+    <EditText
+        android:id="@+id/txtEdad2"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txt_edad2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
+
+    <EditText
+        android:id="@+id/txtTelefono2"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_telefono2"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad2" />
+
+    <EditText
+        android:id="@+id/txtCorreo2"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_correo2"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono2" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo2" />
+
+    <EditText
+        android:id="@+id/txtContrasenia"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="Contraseña"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <EditText
+        android:id="@+id/txtCedula2"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Ingrese Cedula"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtFechaNacimiento2"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_fecha_nacimiento2"
+        android:text="21/04/1995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia" />
+
+    <Button
+        android:id="@+id/btnCalendario2"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:onClick="abrirDialogoFecha"
+        android:text="Calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtFechaNacimiento2"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="300dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCiudad">
+
+        <RadioButton
+            android:id="@+id/rbtnMasculino2"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/rbtn_masculino" />
+
+        <RadioButton
+            android:id="@+id/rbtnFemenino2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/rbtn_femenino" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegistrar2"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:onClick="actualizar"
+        android:text="Actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:onClick="irAtras"
+        android:text="@string/btn_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/btnRegistrar2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Spinner
+        android:id="@+id/spCiudad"
+        android:layout_width="309dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaNacimiento2" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="80dp"
+        android:onClick="buscarUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

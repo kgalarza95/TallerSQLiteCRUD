@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:text="OPERACIONES CRUD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtFNombre"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/txt_nombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtFEdad"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/txt_edad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFCedula" />
+
+    <EditText
+        android:id="@+id/txtFTelefono"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_telefono"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFEdad" />
+
+    <EditText
+        android:id="@+id/txtFCorreo"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_correo"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFTelefono" />
+
+    <EditText
+        android:id="@+id/txtFUsuario"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/txt_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFCorreo" />
+
+    <EditText
+        android:id="@+id/txtFContrasenia"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_contrasenia"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFUsuario" />
+    <EditText
+        android:id="@+id/txtFCedula"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        android:hint=" Cedula"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFNombre" />
+
+    <TextView
+        android:id="@+id/txtFFechaNacimiento"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/txt_fecha_nacimiento"
+        android:text="21/04/1995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFContrasenia" />
+
+    <Button
+        android:id="@+id/btnFCalendario"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:onClick="abrirDialogoFecha"
+        android:text="Calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtFFechaNacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/txtFContrasenia" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="300dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCiudad">
+
+        <RadioButton
+            android:id="@+id/rbtnFMasculino"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/rbtn_masculino" />
+
+        <RadioButton
+            android:id="@+id/rbtnFFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/rbtn_femenino" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFRegistrar"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:onClick="registrar"
+        android:text="@string/btn_registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnFCancelar"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:onClick="irAtras"
+        android:text="@string/btn_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/btnFRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Spinner
+        android:id="@+id/spCiudad"
+        android:layout_width="309dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFFechaNacimiento" />
+</androidx.constraintlayout.widget.ConstraintLayout>
